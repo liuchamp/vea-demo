@@ -7,6 +7,13 @@ export function login(data) {
     data
   })
 }
+export function logine(data) {
+  return request({
+    url: '/oauth/token',
+    method: 'post',
+    data
+  })
+}
 
 export function getInfo(token) {
   return request({
